@@ -8,7 +8,7 @@
 <body>
 
 
-    <h1>Calculadora</h1>
+   <div class="Calculadora">
     <select name="calculadora" id="calculadora">
         <option selected disabled value="Escolha uma operação">Escolha uma operação</option>
         <option value="Soma">Soma</option>
@@ -18,12 +18,14 @@
       </select>
     
     <label for="Primeiro numero">Primeiro numero</label>
-        <input type="text" id="Primeiro numero" name="Primeiro número" required>
+        <input type="numero" id="Primeiro numero" name="Primeiro número" required>
 
     <label for="Segundo numero">Segundo numero</label>
         <input type="text" id="Segundo numero" name="Segundo número" required>
     
+     <p>O resultado é: <span class="resultado"></span></p>
      
+    </div>
 </body>
 <script src="atv11.js"></script>
 </html>
