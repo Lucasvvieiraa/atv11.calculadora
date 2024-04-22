@@ -1,30 +1,34 @@
 
 function Calculadora () {
-    const operação = document.documentElementById("operação").value;
-    const n1 = parseflloat = parsefloat(document.getElementById("n1").value);
-    const n2 = paresefloat(document.getElementById("n2").value);
+    const operacao = document.documentElementById("operation");
+    const casos = operacao.selectedIndex;
+    const n1 = parsefloat(document.getElementById("n1").value);
+    const n2 = parsefloat(document.getElementById("n2").value);
     var result = document.querySelector('span');
-    let results;
 
-    switch (operation){
-        case 'adicao':
-            result.innerhtml = n1 + n2;
+    console.log(n1)
+    console.log(n2)
+    console.log(casos)
+
+    switch (casos){
+        case 1:
+            result.innerHtml = n1 + n2;
             break;
-        case 'subtração':
-                result.innerhtml = n1 - n2;
+        case 2:
+                result.innerHtml = n1 - n2;
                 break;
-        case'multiplicacao':
-                result.innerhtml = n1 * n2;
+        case 3:
+                result.innerHtml = n1 * n2;
                 break;
-        case 'divisao':
+        case 4:
             if(n2 !== 0) {
-                result.innerhtml = n1 / n2;
+                result.innerHtml = n1 / n2;
             } else{
-                result.innerhtml = 'Inválido, divisão por zero';
+                result.innerHtml = 'Inválido, divisão por zero';
             }
             break;
             default:
-                result.innerhtml = 'Operação inválida';
+                result.innerHtml = 'Operação inválida';
                 break;
         
     }
