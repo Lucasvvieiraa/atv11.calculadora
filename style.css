@@ -1,6 +1,9 @@
 .calculadora {
-    width: 300px;
+    width: 350px;
     margin: 50px auto;
+    text-align: center;
+}
+h1{
     text-align: center;
 }
 label{
